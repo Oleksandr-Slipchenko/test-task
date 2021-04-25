@@ -1,0 +1,61 @@
+/* about company */
+
+.about-company {
+  display: flex;
+  margin-bottom: 120px;
+}
+.about-company-img {
+  margin-left: 100px;
+}
+.img-pres-one {
+  margin-top: 30px;
+  width: 270px;
+  height: 265px;
+}
+.img-pres-two {
+  margin-top: 30px;
+  width: 270px;
+  height: 140px;
+}
+.description-block {
+  display: flex;
+  margin-left: 30px;
+}
+.img-pres-three {
+  margin-top: 60px;
+  width: 270px;
+  height: 345px;
+}
+.company-description {
+  display: block;
+  max-width: 400px;
+  margin-left: 30px;
+}
+.description-title {
+  margin-top: 30px;
+  @include font(300, 64px, 1, normal);
+  color: $additional-color;
+}
+.description-text {
+  margin-top: 20px;
+  @include font(300, 16px, 1.56, normal);
+}
+.view-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 20px;
+  width: 222px;
+  height: 71px;
+  background-color: $accent-color;
+  border: none;
+
+  transition: color 250ms $timing-transition;
+
+  &:hover,
+  &:focus {
+    background-color: $text-color-hover;
+    border-radius: 4px;
+  }
+}

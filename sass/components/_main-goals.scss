@@ -1,0 +1,40 @@
+// main-goals//
+
+.goals {
+  margin-bottom: 120px;
+}
+
+.main-goals {
+  margin-bottom: 60px;
+  @include font(300, 64px, 1, normal);
+  color: $additional-color;
+}
+.goals-list {
+  display: flex;
+  justify-content: space-between;
+  @extend %list;
+}
+.goal-one {
+  display: flex;
+  align-items: center;
+  width: 413px;
+  height: 144px;
+}
+.goal-two {
+  display: flex;
+  align-items: center;
+  width: 576px;
+  height: 144px;
+}
+.goal-number {
+  margin: 0;
+  padding: 0;
+  font-family: 'SF Pro Display', sans-serif;
+  @include font(900, 200px, 1.2, normal);
+  color: $border-color;
+}
+.goal-text {
+  margin-left: 30px;
+  @include font(400, 22px, 1.63, normal);
+  color: $secondary-text-color;
+}

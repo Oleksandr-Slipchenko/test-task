@@ -1,0 +1,17 @@
+%list {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 0px;
+  list-style: none;
+}
+%image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+%button-title {
+  @include font(400, 12px, 1, normal);
+  letter-spacing: $font-letter-spacing;
+  text-transform: uppercase;
+  color: $secondary-text-color;
+}

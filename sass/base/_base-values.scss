@@ -1,0 +1,36 @@
+/* base-values */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: $accent-color;
+  color: $primary-text-color;
+  font-family: $main-font;
+
+  max-width: 1440px;
+  margin: 0 auto;
+  // letter-spacing: $font-letter-spacing;
+  // @media screen and (max-width: 767px) {
+  // 	padding-top: 60px;
+  // }
+  // @media screen and (min-width: $tablet-upper) {
+  // 	padding-top: 79px;
+  // }
+  // &.modal-open {
+  // 	overflow: hidden;
+  // }
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+// h1,
+// h2,
+// h3 {
+// 	margin-top: 0px;
+// 	margin-bottom: 0px;
+// 	padding: 0px;
+// }

@@ -1,0 +1,102 @@
+/* our-projects */
+
+.our-projects {
+  margin-bottom: 120px;
+}
+
+.our-projects-title {
+  margin-bottom: 60px;
+  @include font(300, 64px, 1, normal);
+  color: $additional-color;
+}
+.img-first-block {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+  @extend %list;
+}
+.img-first-block .item {
+  width: calc((100% - 30px) / 2);
+}
+.img-first-block .item:last-child {
+  margin-left: 30px;
+}
+.img-first-block .img {
+  width: 100%;
+  height: 255px;
+}
+.img-first-block .background {
+  background-image: linear-gradient(
+      rgba(82, 82, 88, 0.8),
+      rgba(82, 82, 88, 0.8)
+    ),
+    url(../../images/our-proj/our-proj-one.jpg);
+}
+.img-first-block .leisure-center {
+  padding: 47px 79px;
+}
+.leisure-center-head {
+  @include font(700, 64px, 1, normal);
+  color: $accent-color;
+  margin-bottom: 8px;
+}
+.leisure-center .title {
+  @include font(400, 12px, 1, normal);
+  letter-spacing: $font-letter-spacing;
+  text-transform: uppercase;
+  background: initial;
+}
+
+.img-second-block {
+  display: flex;
+  @extend %list;
+  margin-bottom: 30px;
+}
+.img-second-block .item {
+  margin-left: 30px;
+}
+.img-second-block .item:first-child {
+  margin-left: 0;
+}
+
+.leisure-center .view-button {
+  background-color: initial;
+  fill: $accent-color;
+  margin: 0;
+  padding: 0;
+  width: 129px;
+  height: 24px;
+
+  transition: color 250ms $timing-transition;
+
+  &:hover,
+  &:focus {
+    background-color: $text-color-hover;
+    border-radius: 4px;
+  }
+}
+.leisure-center .title {
+  @extend %button-title;
+  color: $accent-color;
+}
+.all-projects-button {
+  display: flex;
+  justify-content: flex-end;
+}
+.all-projects-button .view-button {
+  margin: 0;
+  padding: 0;
+  background: $secondary-text-color;
+  fill: $accent-color;
+
+  transition: color 250ms $timing-transition;
+
+  &:hover,
+  &:focus {
+    background-color: $text-color-hover;
+    border-radius: 4px;
+  }
+}
+.all-projects-button .title {
+  color: $accent-color;
+}

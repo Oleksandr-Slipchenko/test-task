@@ -1,0 +1,50 @@
+/*footer-join-in */
+.join-in {
+	@media screen and (max-width: 767px) {
+		margin-bottom: 60px;
+	}
+	@media screen and (min-width: $tablet-upper) {
+		width: 50%;
+		margin-bottom: 0;
+	}
+	@media screen and (min-width: $desktop-upper) {
+		width: calc((100% - 60px) / 4);
+	}
+	& .title {
+		color: $accent-color;
+		@include font(700, 14px, 1.14, 0.03em);
+		text-transform: uppercase;
+	}
+	&-social {
+		@extend %list;
+		margin-top: 20px;
+		display: flex;
+		@media screen and (max-width: 1199px) {
+			justify-content: center;
+		}
+		@media screen and (min-width: $desktop-upper) {
+			justify-content: inherit;
+		}
+	}
+}
+.join-in .item {
+	margin-right: 10px;
+	&:last-child {
+		margin-right: 0px;
+	}
+}
+.join-in .link {
+	width: 44px;
+	height: 44px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	background: rgba(255, 255, 255, 0.1);
+	fill: $accent-color;
+	transition: background 250ms $timing-transition;
+	&:hover,
+	&:focus {
+		background-color: $text-color-hover;
+	}
+}

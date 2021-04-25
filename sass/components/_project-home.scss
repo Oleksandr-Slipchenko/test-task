@@ -1,0 +1,159 @@
+/* project-home */
+
+.project-home {
+  display: flex;
+  padding-top: 102px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 120px;
+
+  // background-image: linear-gradient(rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)),
+  // 	url(./../images/about-company/main-build.jpg);
+  // background-size: cover;
+  // @media screen and (max-width: 480px) {
+  // 	padding-left: 15px;
+  // 	padding-right: 15px;
+  // }
+  // @media screen and (min-device-pixel-ratio: 2),
+  // 	screen and (min-resolution: 192dpi),
+  // 	screen and (min-resolution: 2dppx) {
+  // 	& {
+  // 		background-image: linear-gradient(rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)),
+  // 			url(./../images/hero/hero-mobile@2x.jpg);
+  // 	}
+  // }
+  // @media screen and (min-width: 481px) and (max-width: $tablet-upper) {
+  // 	background-image: linear-gradient(rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)),
+  // 		url(./../images/hero/hero-tablet.jpg);
+
+  // 	@media screen and (min-device-pixel-ratio: 2),
+  // 		screen and (min-resolution: 192dpi),
+  // 		screen and (min-resolution: 2dppx) {
+  // 		& {
+  // 			background-image: linear-gradient(rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)),
+  // 				url(./../images/hero/hero-tablet@2x.jpg);
+  // 		}
+  // 	}
+  // }
+}
+
+.project-title {
+  margin-top: 0px;
+  margin-bottom: 90px;
+}
+.project-title .project {
+  margin-top: 336px;
+  margin-bottom: 0;
+  @include font(300, 64px, 1, normal);
+  text-transform: uppercase;
+  color: $additional-color;
+}
+.project-title .home {
+  margin-top: 0;
+  margin-bottom: 90px;
+  @include font(700, 64px, 1, normal);
+  text-transform: uppercase;
+  color: $secondary-text-color;
+}
+
+.button {
+  display: flex;
+  margin-bottom: 90px;
+}
+.button .block-left-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 53px;
+  height: 53px;
+  border: 1px solid;
+  border-color: $border-color;
+  background-color: $border-background-color;
+
+  transition: color 250ms $timing-transition;
+
+  &:hover,
+  &:focus {
+    background-color: $text-color-hover;
+    border-radius: 4px;
+  }
+  &:active {
+    border: none;
+  }
+}
+.button .block-right-button {
+  display: flex;
+  margin-left: 23px;
+  justify-content: center;
+  align-items: center;
+  width: 53px;
+  height: 53px;
+  border: 1px solid;
+  border-color: $border-color;
+  background-color: $border-background-color;
+
+  transition: color 250ms $timing-transition;
+
+  &:hover,
+  &:focus {
+    background-color: $text-color-hover;
+    border-radius: 4px;
+  }
+  &:active {
+    border: none;
+  }
+}
+
+.project-home .pages {
+  position: relative;
+  display: inline-flex;
+  color: $additional-color;
+  @include font(400, 24px, 1, normal);
+}
+.pages .pages-two {
+  margin-left: 90px;
+}
+.pages .pages-two:before {
+  content: '';
+  position: absolute;
+  width: 2px;
+  height: 44px;
+  left: 50%;
+  top: -50%;
+  background: #e0e0e0;
+  transform: rotate(45deg);
+}
+
+.project-home .project-home-img {
+  position: relative;
+  margin-left: 102px;
+}
+.project-home .view-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 222px;
+  height: 71px;
+  background-color: $accent-color;
+  border: none;
+
+  transition: color 250ms $timing-transition;
+
+  &:hover,
+  &:focus {
+    background-color: $text-color-hover;
+    border-radius: 4px;
+  }
+}
+
+.view-button .img-right-button {
+  margin-left: 12px;
+}
+.view-button .title {
+  @extend %button-title;
+}

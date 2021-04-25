@@ -1,0 +1,84 @@
+/* header and main navigation of header */
+.header-items {
+  display: flex;
+  align-items: center;
+  @include font(400, 12px, 1, normal);
+  letter-spacing: 0.2em;
+}
+.logo {
+  position: relative;
+
+  font-family: 'Antonio', sans-serif;
+  width: 70px;
+  margin: 0;
+  padding: 0;
+}
+
+.logo-two {
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+}
+.logo-title {
+  font-size: 7px;
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
+}
+
+.nav {
+  @extend %list;
+  display: flex;
+}
+.nav .item {
+  margin-left: 60px;
+  &:first-child {
+    margin-left: 330px;
+  }
+  &.active {
+    margin-bottom: 0px;
+  }
+}
+.nav .link {
+  position: relative;
+  display: flex;
+  color: $secondary-text-color;
+  text-decoration: none;
+  transition: color 250ms $timing-transition;
+
+  padding-top: 43px;
+  padding-bottom: 47px;
+  margin-bottom: 0;
+  &:hover,
+  &:focus {
+    color: $text-color-hover;
+  }
+  &:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 40px;
+    width: 100%;
+    height: 1px;
+    background: $secondary-text-color;
+    opacity: 0;
+  }
+  &.active::before {
+    opacity: 1;
+
+    bottom: initial;
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 44px;
+    width: 100%;
+    height: 1px;
+    background: $secondary-text-color;
+    opacity: 0;
+  }
+  &.active::after {
+    opacity: 1;
+  }
+}
