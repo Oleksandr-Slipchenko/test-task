@@ -27,17 +27,12 @@
   <body>
     <!-- header and main navigation of header -->
 
-    <header class="page-header container">
+    <header class="page-header">
       <div class="container">
         <nav class="header-items">
-          <div class="logo">
-            <svg class="logo-img" width="70" height="44">
-              <use href="./images/symbol-defs.svg#icon-logo"></use>
-            </svg>
-            <div class="logo-two">
-              <p class="logo-title">DIGTAL PROJECT</p>
-            </div>
-          </div>
+          <a href="./index.html" class="link">
+            <img src="./images/logo.svg" alt="logo" width="70" height="44" />
+          </a>
           <ul class="nav">
             <li class="item active">
               <a href="./index.html" class="link active">ГЛАВНАЯ</a>
@@ -88,7 +83,7 @@
           </div>
         </div>
         <div class="project-home-img">
-          <img src="images/about-company/main-build.jpg" href="building" />
+          <img src="images/about-company/main-build.jpg" alt="building" />
           <button type="button" class="view-button">
             <p class="title">ВЗГЛЯНУТЬ</p>
             <svg class="img-right-button" width="24" height="24">
@@ -105,19 +100,19 @@
           <img
             class="img-pres-one"
             src="images/about-company/about-comp-build-one.jpg"
-            href="building"
+            alt="building"
           />
           <img
             class="img-pres-two"
             src="images/about-company/about-comp-build-three.jpg"
-            href="building"
+            alt="building"
           />
         </div>
         <div class="description-block">
           <img
             class="img-pres-three"
             src="images/about-company/about-comp-build-two.jpg"
-            href="building"
+            alt="building"
           />
           <div class="company-description">
             <span>
@@ -191,7 +186,7 @@
               <img
                 class="img"
                 src="./images/our-proj/our-proj-two.jpg"
-                href="building"
+                alt="building"
               />
             </li>
           </ul>
@@ -200,21 +195,21 @@
               <img
                 class="img"
                 src="./images/our-proj/our-proj-three.jpg"
-                href="building"
+                alt="building"
               />
             </li>
             <li class="item">
               <img
                 class="img"
                 src="./images/our-proj/our-proj-four.jpg"
-                href="building"
+                alt="building"
               />
             </li>
             <li class="item">
               <img
                 class="img"
                 src="./images/our-proj/our-proj-five.jpg"
-                href="building"
+                alt="building"
               />
             </li>
           </ul>
@@ -234,169 +229,197 @@
 
       <!-- CONNECT WITH US -->
 
-      <section class="connect-with-us">
-        <form class="form" autocomplete="off">
-          <h2 class="form-title">Связаться с нами</h2>
-          <label class="form-field">
-            <input class="form-input" type="text" name="name" placeholder=" " />
-            <span class="form-label">Имя</span>
-          </label>
-          <label class="form-field">
-            <input class="form-input" type="tel" name="tel" placeholder=" " />
-            <span class="form-label"
-              >Номер телефона
-              <p class="asterisk">*</p></span
-            >
-          </label>
-          <label class="form-field">
-            <input
-              class="form-input"
-              type="email"
-              name="mail"
-              placeholder=" "
-            />
-            <span class="form-label"
-              >E-mail
-              <p class="asterisk">*</p></span
-            >
-          </label>
-          <label class="form-field">
-            <input
-              class="form-input"
-              type="text"
-              name="goods"
-              placeholder=" "
-            />
-            <span class="form-label">Интересующий товар/услуга</span>
-          </label>
-          <label class="form-field comment">
-            <textarea
-              class="form-input textarea"
-              name="comment"
-              rows="10"
-              placeholder=" "
-            ></textarea>
-            <span class="form-label comment-lable"
-              >Сообщение
-              <p class="asterisk">*</p></span
-            >
-          </label>
-          <label class="form-field policy">
-            <input class="checkbox" type="checkbox" name="policy" />
-            <span class="check-icon"></span>
-            <span class="label-policy">
-              Отправляя заявку Вы соглашаетесь с политикой конфиденциальности
-            </span>
-          </label>
-          <div class="submite">
-            <button class="submite-button" type="submit">ОТПРАВИТЬ</button>
-          </div>
-        </form>
-        <img src="images/contacts.jpg" />
+      <section class="connect-with-us container">
+        <h2 class="form-title">Связаться с нами</h2>
+
+        <div class="form-block">
+          <form class="form" autocomplete="off">
+            <label class="form-field">
+              <input
+                class="form-input"
+                type="text"
+                name="name"
+                placeholder=" "
+              />
+              <span class="form-label">Имя</span>
+            </label>
+            <label class="form-field">
+              <input class="form-input" type="tel" name="tel" placeholder=" " />
+              <span class="form-label"
+                >Номер телефона
+                <p class="asterisk">*</p></span
+              >
+            </label>
+            <label class="form-field">
+              <input
+                class="form-input"
+                type="email"
+                name="mail"
+                placeholder=" "
+              />
+              <span class="form-label"
+                >E-mail
+                <p class="asterisk">*</p></span
+              >
+            </label>
+            <label class="form-field">
+              <input
+                class="form-input"
+                type="text"
+                name="goods"
+                placeholder=" "
+              />
+              <span class="form-label">Интересующий товар/услуга</span>
+            </label>
+            <label class="form-field comment">
+              <textarea
+                class="form-input textarea"
+                name="comment"
+                rows="10"
+                placeholder=" "
+              ></textarea>
+              <span class="form-label comment-lable"
+                >Сообщение
+                <p class="asterisk">*</p></span
+              >
+            </label>
+          </form>
+          <img class="form-img" src="images/contacts.jpg" alt="photo" />
+        </div>
+
+        <label class="form-field policy">
+          <input class="checkbox" type="checkbox" name="policy" />
+          <span class="check-icon"></span>
+          <span class="label-policy">
+            Отправляя заявку Вы соглашаетесь с политикой конфиденциальности
+          </span>
+        </label>
+        <button type="button" class="view-button">
+          <p class="title">ВСЕ ПРОЕКТЫ</p>
+          <svg class="img-right-button" width="24" height="24">
+            <use href="./images/symbol-defs.svg#icon-arrow-right-long"></use>
+          </svg>
+        </button>
       </section>
     </main>
-    <!-- footer -->
-    <footer class="footer">
-      <!-- info -->
-      <div>
-        <ul>
-          <b>Информация</b>
-          <li><a href="./index.html"></a>Главная</li>
-          <li><a href="./index.html"></a>Галерея</li>
-          <li><a href="./index.html"></a>Проекты</li>
-          <li><a href="./index.html"></a>Сертификаты</li>
-          <li><a href="./index.html"></a>Контакты</li>
-        </ul>
-      </div>
-      <!-- <div class="footer-list container"> -->
 
-      <!-- adrress -->
-      <section class="address">
-        <b>Контакты</b>
-        <address class="address-map">
-          <ul class="address-map-list">
-            <li class="item">
-              <svg class="contacts-icon" width="10" height="15">
-                <use href="./images/symbol-defs.svg#icon-phone"></use>
-              </svg>
-              <p class="item">
-                100000, Республика Казахстан, г. Караганда, ул. Телевизионная 10
-              </p>
-            </li>
-            <li class="item">
-              <a href="tel:+380000000000" class="link">
-                <svg class="contacts-icon" width="10" height="15">
-                  <use href="./images/symbol-defs.svg#icon-phone"></use>
-                </svg>
-                +38 (000) 000 00 00
-              </a>
-            </li>
-            <li class="item">
-              <a href="mailto:mail@gmail.com" class="link">
-                <svg class="contacts-icon" width="16" height="11">
-                  <use href="./images/symbol-defs.svg#icon-mail"></use>
-                </svg>
-                mail@gmail.com
-              </a>
-            </li>
-          </ul>
-        </address>
-      </section>
-      <!-- join in -->
-      <section class="join-in">
-        <b class="title">Социальные сети</b>
-        <ul class="join-in-social">
-          <li class="item">
-            <a
-              href="https://www.instagram.com/"
-              aria-label="ссылка instagram"
-              class="link"
-            >
-              <svg width="20" height="20">
-                <use href="./images/symbol-defs.svg#icon-instagram"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="item">
-            <a
-              href="https://twitter.com/"
-              aria-label="ссылка twitter"
-              class="link"
-            >
-              <svg width="20" height="20">
-                <use href="./images/symbol-defs.svg#icon-twitter"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="item">
-            <a
-              href="https://www.facebook.com/"
-              aria-label="ссылка facebook"
-              class="link"
-            >
-              <svg width="20" height="20">
-                <use href="./images/symbol-defs.svg#icon-facebook"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="item">
-            <a
-              href="https://www.linkedin.com/"
-              aria-label="ссылка linkedin"
-              class="link"
-            >
-              <svg width="20" height="20">
-                <use href="./images/symbol-defs.svg#icon-linkedin"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </section>
-      <!-- </div> -->
-      <div>
-        <span class="copyright"
-          >© 2019 Digital Project. Все права защищены.</span
-        >
+    <!-- footer -->
+
+    <footer class="footer">
+      <div class="footer-blocks">
+        <div class="main-footer-sections">
+          <img
+            class="footer-logo"
+            src="./images/logo-footer.svg"
+            alt="logo"
+            height="94"
+            width="145"
+          />
+
+          <!-- info -->
+
+          <div class="info-address">
+            <ul class="info">
+              <h3 class="title">Информация</h3>
+              <li class="item"><a href="./index.html"></a>Главная</li>
+              <li class="item"><a href="./index.html"></a>Галерея</li>
+              <li class="item"><a href="./index.html"></a>Проекты</li>
+              <li class="item"><a href="./index.html"></a>Сертификаты</li>
+              <li class="item"><a href="./index.html"></a>Контакты</li>
+            </ul>
+
+            <!-- adrress -->
+            <section class="address">
+              <h3 class="title">Контакты</h3>
+              <address">
+                <ul class="address-map-list">
+                  <li class="item map-point">
+                    <svg class="map-point-icon" width="16" height="16">
+                      <use href="./images/symbol-defs.svg#icon-map-point"></use>
+                    </svg>
+                    <p class="item">
+                      100000, Республика Казахстан,<br />
+                      г. Караганда, ул. Телевизионная 10
+                    </p>
+                  </li>
+                  <li class="item handset">
+                    <a href="tel:+380000000000" class="link">
+                      <svg class="handset-icon" width="16" height="16">
+                        <use href="./images/symbol-defs.svg#icon-handset"></use>
+                      </svg>
+                      +38 (000) 000 00 00
+                    </a>
+                  </li>
+                  <li class="item">
+                    <a href="mailto:mail@gmail.com" class="link">
+                      <svg class="envelope-icon" width="16" height="11">
+                        <use
+                          href="./images/symbol-defs.svg#icon-envelope"
+                        ></use>
+                      </svg>
+                      mail@gmail.com
+                    </a>
+                  </li>
+                </ul>
+              </address>
+            </section>
+          </div>
+          <!-- join in -->
+          <section class="join-in">
+            <h3 class="title">Социальные сети</h3>
+            <ul class="join-in-social">
+              <li class="item">
+                <a
+                  href="https://www.facebook.com/"
+                  aria-label="link facebook"
+                  class="link"
+                >
+                  <svg width="20" height="20">
+                    <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="item">
+                <a
+                  href="https://twitter.com/"
+                  aria-label="link twitter"
+                  class="link"
+                >
+                  <svg width="20" height="20">
+                    <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="item">
+                <a
+                  href="https://www.linkedin.com"
+                  aria-label="link linkedin"
+                  class="link"
+                >
+                  <svg width="20" height="20">
+                    <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="item">
+                <a
+                  href="https://www.pinterest.com/"
+                  aria-label="link pininterest"
+                  class="link"
+                >
+                  <svg width="20" height="20">
+                    <use href="./images/symbol-defs.svg#icon-pininterest"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </section>
+        </div>
+        <div>
+          <span class="copyright"
+            >© 2019 Digital Project. Все права защищены.</span
+          >
+        </div>
       </div>
     </footer>
   </body>

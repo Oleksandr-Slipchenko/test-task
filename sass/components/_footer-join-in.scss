@@ -1,68 +1,90 @@
 /*footer-subscribe */
-.subscribe {
-	width: calc((100% - 30px) / 2);
-	@media screen and (max-width: 1199px) {
-		width: 100%;
-	}
-	&-title {
-		margin-bottom: 20px;
-		display: inline-block;
-		@include font(700, 14px, 1.14, 0.03em);
-		text-transform: uppercase;
-		color: $accent-color;
-	}
+
+.join-in {
+  margin-left: 146px;
 }
-.subscribe-form {
-	@media screen and (min-width: $tablet-upper) {
-		display: block;
-	}
-	@media screen and (min-width: $desktop-upper) {
-		display: flex;
-	}
-	&:focus-within .subscribe-input {
-		border-color: $text-color-hover;
-		outline: none;
-	}
+
+.join-in .title {
+  margin-bottom: 25px;
+  @include font(700, 16px, 1.18, normal);
+  color: $accent-color;
 }
-.subscribe-input {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	width: 100%;
-	max-width: 450px;
-	margin-bottom: 20px;
-	padding: 15px 16px;
-	font-size: 16px;
-	line-height: 1.25;
-	background-color: inherit;
-	border: 1px solid rgba(255, 255, 255, 0.3);
-	box-sizing: border-box;
-	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-	border-radius: 4px;
-	color: rgba(255, 255, 255, 0.6);
-	transition: border-color 250ms $timing-transition;
-	@media screen and (min-width: $desktop-upper) {
-		margin-right: 12px;
-		margin-bottom: 0px;
-		max-width: 358px;
-	}
+
+.join-in-social {
+  display: flex;
+  @extend %list;
 }
-.button-subscribe {
-	padding: 10px 28px 10px 29px;
-	display: inline-flex;
-	align-items: center;
-	max-width: 200px;
-	max-height: 50px;
-	font-weight: 700;
-	font-size: 16px;
-	line-height: 1.9;
-	color: $accent-color;
-	background: $text-color-hover;
-	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-	border-radius: 4px;
-	border: none;
-	letter-spacing: 0.06em;
-	& .text {
-		margin-right: 10px;
-	}
+
+.join-in-social .item {
+  margin-right: 40px;
 }
+.join-in-social .item:last-child {
+  margin-right: 0px;
+}
+// .subscribe {
+// 	width: calc((100% - 30px) / 2);
+// 	@media screen and (max-width: 1199px) {
+// 		width: 100%;
+// 	}
+// 	&-title {
+// 		margin-bottom: 20px;
+// 		display: inline-block;
+// 		@include font(700, 14px, 1.14, 0.03em);
+// 		text-transform: uppercase;
+// 		color: $accent-color;
+// 	}
+// }
+// .subscribe-form {
+// 	@media screen and (min-width: $tablet-upper) {
+// 		display: block;
+// 	}
+// 	@media screen and (min-width: $desktop-upper) {
+// 		display: flex;
+// 	}
+// 	&:focus-within .subscribe-input {
+// 		border-color: $text-color-hover;
+// 		outline: none;
+// 	}
+// }
+// .subscribe-input {
+// 	display: block;
+// 	margin-left: auto;
+// 	margin-right: auto;
+// 	width: 100%;
+// 	max-width: 450px;
+// 	margin-bottom: 20px;
+// 	padding: 15px 16px;
+// 	font-size: 16px;
+// 	line-height: 1.25;
+// 	background-color: inherit;
+// 	border: 1px solid rgba(255, 255, 255, 0.3);
+// 	box-sizing: border-box;
+// 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+// 	border-radius: 4px;
+// 	color: rgba(255, 255, 255, 0.6);
+// 	transition: border-color 250ms $timing-transition;
+// 	@media screen and (min-width: $desktop-upper) {
+// 		margin-right: 12px;
+// 		margin-bottom: 0px;
+// 		max-width: 358px;
+// 	}
+// }
+// .button-subscribe {
+// 	padding: 10px 28px 10px 29px;
+// 	display: inline-flex;
+// 	align-items: center;
+// 	max-width: 200px;
+// 	max-height: 50px;
+// 	font-weight: 700;
+// 	font-size: 16px;
+// 	line-height: 1.9;
+// 	color: $accent-color;
+// 	background: $text-color-hover;
+// 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+// 	border-radius: 4px;
+// 	border: none;
+// 	letter-spacing: 0.06em;
+// 	& .text {
+// 		margin-right: 10px;
+// 	}
+// }

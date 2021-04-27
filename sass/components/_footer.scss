@@ -1,27 +1,14 @@
 /* footer-tools */
-.footer {
-	padding-top: 60px;
-	padding-bottom: 60px;
-	text-align: center;
-	background-color: #2f303a;
-	@media screen and (min-width: $desktop-upper) {
-		text-align: inherit;
-	}
-	&-list {
-		align-items: baseline;
-		justify-content: space-between;
-		@media screen and (min-width: $desktop-upper) {
-			display: flex;
-		}
-	}
+
+.footer-blocks {
+  padding: 58px 212px 60px 116px;
+  background-color: $footer-background;
 }
-.address-join-in {
-	@media screen and (min-width: $tablet-upper) {
-		display: flex;
-		margin-bottom: 60px;
-	}
-	@media screen and (min-width: $desktop-upper) {
-		display: contents;
-		margin-bottom: 0px;
-	}
+
+.main-footer-sections {
+  display: flex;
+}
+
+.info-address {
+  display: flex;
 }
