@@ -1,12 +1,13 @@
 /* footer-tools */
-
-.footer-blocks {
-  padding: 58px 212px 60px 116px;
-  background-color: $footer-background;
+.footer {
+  position: relative;
 }
 
-.main-footer-sections {
+.footer-blocks {
   display: flex;
+
+  padding: 58px 212px 60px 116px;
+  background-color: $footer-background;
 }
 
 .info-address {
